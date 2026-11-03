@@ -6,8 +6,58 @@
   margin: 0;
 }
 
-:root {
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
+.site-header {
+  margin-top: 1.5rem;
+}
+
+.site-content {
+  margin-top: 1.5rem;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.btn:hover {
+  color: #cbcbcb;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-delete {
+  background-color: cornflowerblue;
+  color: white;
+  border: blue 1px solid;
+}
+
+.image-cards {
+  list-style: none;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
