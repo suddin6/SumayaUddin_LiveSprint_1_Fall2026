@@ -11,21 +11,35 @@
       <h1 class="title">
         Welcome to the Interactive Reveal What’s that Animal UI
       </h1>
+      <h2 class="subtitle">
+        Click on the buttons below to reveal the animal images.
+      </h2>
     </header>
     <main class="site-content">
-      <h2 class="subtitle">
-        Click on the buttons below to reveal the animal images
-      </h2>
+      <div class="images">
+        <div id="cat-img" class="card hidden">
+          <img src="tabby-cat.jpg" alt="Cat Image" />
+          <button id="btn-delete-cat" class="btn btn-block btn-delete">
+            Hide Result
+          </button>
+        </div>
 
-      <div id="display" class="hidden"></div>
-      <ul id="animal-list" class="image-cards"></ul>
+        <div id="dog-img" class="card hidden">
+          <img src="dog.jpg" alt="Dog Image" />
+          <button id="btn-delete-dog" class="btn btn-block btn-delete">
+            Hide Result
+          </button>
+        </div>
 
-      <!-- <section class="btns">
-        <button id="cat" class="btn">Reveal a CAT</button>
-        <button id="dog" class="btn">Reveal a DOG</button>
-        <button id="cow" class="btn">Reveal a COW</button>
-      </section> -->
+        <div id="cow-img" class="card hidden">
+          <img src="cow.jpg" alt="Cow Image" />
+          <button id="btn-delete-cow" class="btn btn-block btn-delete">
+            Hide Result
+          </button>
+        </div>
+      </div>
     </main>
+
     <footer class="site-footer">
       <button id="cat" class="btn">Reveal a CAT</button>
       <button id="dog" class="btn">Reveal a DOG</button>

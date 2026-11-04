@@ -6,37 +6,36 @@
   margin: 0;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .site-header {
+  text-align: center;
   margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
-.site-content {
+.subtitle {
+  text-align: center;
   margin-top: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .site-footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   bottom: 1rem;
+  width: 100%;
 }
 
 .btn {
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
   padding: 0.5rem 1.5rem;
   border: 1px solid transparent;
   text-align: center;
   transition: color 0.2s;
+  font-size: 1.5rem;
 }
 
 .btn:hover {
@@ -44,7 +43,8 @@ body {
 }
 
 .btn-block {
-  width: 100%;
+  width: 85%;
+  text-align: center;
 }
 
 .btn-delete {
@@ -53,11 +53,28 @@ body {
   border: blue 1px solid;
 }
 
-.image-cards {
-  list-style: none;
+.hidden {
+  display: none !important;
+}
+
+.images {
   margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.images img {
+  width: 250px;
+  height: 300px;
+}
+
+.images button {
+  margin-top: 0.5rem;
+}
+
+.card {
+  margin-top: 1.25rem;
+  text-align: center;
 }
